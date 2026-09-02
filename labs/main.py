@@ -1,14 +1,8 @@
-def bmi_report(weight_kg, height_m):
-    # TODO: calculate bmi, round it to 1 decimal place, determine the category,
-    # and return "BMI: {bmi}, Category: {category}"
+def remove_duplicates(items):
+    # TODO: use a loop to build a new list with duplicates removed, keeping first occurrences
     pass
-    BMI = round(weight_kg / height_m ** 2, 1)
-    if BMI < 18.5:
-        Category = "Underweight"
-    elif BMI <= 24.9:
-        Category = "Normal weight"
-    elif BMI <= 29.9:
-        Category = "Overweight"
-    else:
-        Category = "Obese"
-    return f"BMI: {BMI}, Category: {Category}"
+    result = []
+    for item in items:
+        if item not in result:
+            result.append(item)
+    return result
