@@ -1,6 +1,9 @@
-def total_word_count(sentences):
-    total = 0
+def word_lengths(words):
+    lengths = {}
+    if not words:
+        return {}
+    for word in words:
+        lengths[word] = len(word)
+    # TODO: loop through `words` and populate `lengths` with word -> length of word
 
-    for sentence in sentences:   
-        total += len(sentence.split())
-    return total
+    return lengths
