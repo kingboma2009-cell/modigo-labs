@@ -1,9 +1,10 @@
-def word_lengths(words):
-    lengths = {}
-    if not words:
-        return {}
-    for word in words:
-        lengths[word] = len(word)
-    # TODO: loop through `words` and populate `lengths` with word -> length of word
+def total_scores(rounds):
+    totals = {}
+    for round_scores in rounds:
+        for player, points in round_scores.items():
+            if player not in totals:
+                totals[player] = 0
+            totals[player] += points
+    return totals
 
-    return lengths
+print(total_scores([{"Ada": 5, "Bola": 3}, {"Ada": 2, "Bola": 4}]))
