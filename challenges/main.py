@@ -1,6 +1,5 @@
-def second_largest(numbers):
-    # TODO: return the second largest DISTINCT number in `numbers`
-    pass
-    unique_number = list(set(numbers))
-    unique_number.sort(reverse=True)
-    return unique_number[1]
+def calculate_perimeter(length, width):
+    # TODO: store 2 * (length + width) in a variable called perimeter
+    perimeter = 2 * (length + width)  # TODO: replace 0 with the correct calculation
+
+    return perimeter
