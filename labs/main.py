@@ -1,5 +1,7 @@
-def dedupe_preserve_order(items):
-    return list(dict.fromkeys(items))
-    # TODO: use a set to track seen values while building a new list
-    # that preserves the original order of first appearances
+def top_scorers(results):
+    highest = max (score for name, score in results)
+    winners = [name for name, score in results if score == highest]
+    return tuple(sorted(winners))
+    # TODO: find the highest score, collect all players who achieved it,
+    # and return their names as a sorted tuple
     pass
