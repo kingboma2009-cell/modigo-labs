@@ -1,10 +1,6 @@
-def has_all_vowels(word):
-    required = {"a", "e", "i", "o", "u"}
-    word = word.lower()
-    for vowel in required:
-        if vowel not in word:
-            return False
-    return True
-    # TODO: build a set of vowels actually found in `word`,
-    # then check if it contains all of `required`
-    pass
+# No starter code provided — write the full function yourself.
+# Function name: create_book_record
+# Parameters: title, author, year
+# Must return: (title, author, year) as a tuple
+def create_book_record(title, author, year):
+    return (title, author, year)
