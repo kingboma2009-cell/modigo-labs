@@ -1,6 +1,4 @@
-def count_unique_coordinates(coordinates):
-    unique = []
-    for coord in coordinates:
-        if coord in coordinates and coord not in unique:
-            unique.append(coord)
-    return len(unique)
+def swap_tuple(pair):
+    return (pair[1], pair[0])
+    # TODO: return a new tuple with pair's two elements swapped
+    pass
